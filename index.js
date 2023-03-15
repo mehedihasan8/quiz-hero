@@ -184,3 +184,9 @@ document.querySelector("#submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+// blog btn click
+
+const blogShow = () => {
+  window.location.href = "http://127.0.0.1:5502/blog.html";
+};
