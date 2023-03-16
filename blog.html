@@ -21,6 +21,10 @@
       .up-down {
         margin: 50px 0;
       }
+      .heilight {
+        font-size: 30px;
+        text-decoration: underline;
+      }
       .span {
         text-decoration: underline;
         font-size: 20px;
@@ -45,7 +49,7 @@
           return with array.
         </p>
       </section>
-      <section>
+      <section class="up-down">
         <h2>Difference cookies, local storage and session storage</h2>
         <h4>
           Cookies, Session Storage, and Local Storage are all ways to store data
@@ -71,7 +75,7 @@
           depending on the browser.
         </p>
       </section>
-      <section>
+      <section class="up-down">
         <h2>How does the Event Loop work?</h2>
         <h4>
           The event loop is a mechanism that continuously checks the JavaScript
@@ -105,9 +109,10 @@
         </p>
       </section>
 
-      <section>
+      <section class="up-down">
         <h2>
-          Here are explaining how the quizTimer function works in JavaScript
+          Here are explaining how the
+          <span class="heilight">quizTimer()</span> function works in JavaScript
         </h2>
         <p class="line">
           # At first the quizTimer function is to check the dismiss parameter.
@@ -115,18 +120,40 @@
           timer variable to stop the timer. If dismiss is not true, the timer
           continues to run. and the function creates a new timer using the
           setInterval function. <br />
+
           # Then going to Inside the interval function, the current count of
           seconds is obtained using a variable called count. The count is then
           converted into minutes and seconds format using the Math.floor and
           modulus (%) operators. The minutes and seconds are then displayed on
           the web page using the innerHTML property. <br />
+
           # Then going to Inside the interval function, the current count of
           seconds is obtained using a variable called count. The count is then
           converted into minutes and seconds format using the Math.floor and
           modulus (%) operators. The minutes and seconds are then displayed on
           the web page using the innerHTML property. <br />
+
           # Finally the count variable is incremented by one every time the
           function runs to keep track of the number of seconds that have passed
+        </p>
+      </section>
+      <section>
+        <h2>
+          Here are explaining how the
+          <span class="heilight">chooseQuize()</span> function works in
+          JavaScript
+        </h2>
+        <p class="line">
+          # chooseQuize function takes 2 arguments "index" is the answer to the
+          question and "givenAns" returns the answer chose by the user. <br />
+          # it read and check that the query being answered by "id" exist in the
+          array. and "answers" contains the user's answers to all questions.
+          <br />
+          # if it exist. it updates the existing answer for that question with
+          the new answer chose by the user. if it doesn't exist, it add a new
+          answer to the answers array for that question. <br />
+          # And finally it call the function "displayAnswers" to display the
+          updated list of selected answers on the page.
         </p>
       </section>
     </main>
