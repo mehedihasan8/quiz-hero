@@ -7,13 +7,16 @@
     <title>Blog</title>
     <style>
       .container {
-        max-width: 1200px;
+        max-width: 1150px;
         width: 100%;
         margin: auto;
       }
+      .boday {
+        margin: 0 16px;
+      }
       .line {
-        line-height: 40px;
-        padding: 0 20px;
+        line-height: 30px;
+        padding: 0 16px;
       }
       .up-down {
         margin: 50px 0;
@@ -25,12 +28,14 @@
     </style>
   </head>
   <body class="container">
-    <main>
+    <main class="boday">
       <section class="up-down">
         <h2>Difference map(), forEach(), filter() and find()</h2>
-        <p class="line">
+        <h4>
           map, forEach, filter and find This is the array method. they each have
-          a different purpose and can be used<br />
+          a different purpose and can be used
+        </h4>
+        <p class="line">
           1. The function of map is to return each element by throwing a loop
           with array.<br />
           2. The forEach function throws a loop but does not return anything.<br />
@@ -42,11 +47,12 @@
       </section>
       <section>
         <h2>Difference cookies, local storage and session storage</h2>
-        <p class="line">
+        <h4>
           Cookies, Session Storage, and Local Storage are all ways to store data
           in a user's browser, but they have different characteristics and use
-          cases: <br />
-
+          cases:
+        </h4>
+        <p class="line">
           1. <span class="span">Cookies</span>: Cookies are small text files
           that are stored on the client-side by the browser. They are commonly
           used to store user preferences, session IDs, and other small amounts
@@ -63,6 +69,64 @@
           caching data, or other data that needs to be accessed across multiple
           sessions. However, Local Storage has a maximum size limit that varies
           depending on the browser.
+        </p>
+      </section>
+      <section>
+        <h2>How does the Event Loop work?</h2>
+        <h4>
+          The event loop is a mechanism that continuously checks the JavaScript
+          execution stack and the task queue to determine what code needs to be
+          executed next. Here's how it works
+        </h4>
+        <p class="line">
+          1. JavaScript has a single thread of execution, which means that it
+          can only do one thing at a time. When a function is called, it gets
+          added to the call stack, which is a data structure that keeps track of
+          where the program is in its execution. <br />
+
+          2. When an asynchronous operation, such as a setTimeout or an HTTP
+          request, is called, it gets added to the task queue, which is a data
+          structure that holds tasks that are waiting to be executed. <br />
+
+          3.Once the call stack is empty, the event loop checks the task queue
+          to see if there are any tasks waiting to be executed. If there is a
+          task in the queue, the event loop moves it from the task queue to the
+          call stack, and the function associated with the task is executed.
+          <br />
+
+          4. As the function is executing, any synchronous code in the function
+          gets added to the call stack. When the function finishes executing,
+          the call stack is empty again, and the event loop checks the task
+          queue for the next task.
+          <br />
+          5. This process continues until there are no more tasks in the task
+          queue, at which point the event loop stops checking for tasks and the
+          program ends.
+        </p>
+      </section>
+
+      <section>
+        <h2>
+          Here are explaining how the quizTimer function works in JavaScript
+        </h2>
+        <p class="line">
+          # At first the quizTimer function is to check the dismiss parameter.
+          If dismiss is true, then the clearInterval function is called with the
+          timer variable to stop the timer. If dismiss is not true, the timer
+          continues to run. and the function creates a new timer using the
+          setInterval function. <br />
+          # Then going to Inside the interval function, the current count of
+          seconds is obtained using a variable called count. The count is then
+          converted into minutes and seconds format using the Math.floor and
+          modulus (%) operators. The minutes and seconds are then displayed on
+          the web page using the innerHTML property. <br />
+          # Then going to Inside the interval function, the current count of
+          seconds is obtained using a variable called count. The count is then
+          converted into minutes and seconds format using the Math.floor and
+          modulus (%) operators. The minutes and seconds are then displayed on
+          the web page using the innerHTML property. <br />
+          # Finally the count variable is incremented by one every time the
+          function runs to keep track of the number of seconds that have passed
         </p>
       </section>
     </main>

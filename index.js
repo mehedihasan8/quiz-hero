@@ -188,5 +188,5 @@ document.querySelector("#submit").addEventListener("click", () => {
 // blog btn click
 
 const blogShow = () => {
-  window.location.href = "http://127.0.0.1:5502/blog.html";
+  window.location.href = "./blog.html";
 };
