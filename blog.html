@@ -13,9 +13,14 @@
       }
       .line {
         line-height: 40px;
+        padding: 0 20px;
       }
       .up-down {
         margin: 50px 0;
+      }
+      .span {
+        text-decoration: underline;
+        font-size: 20px;
       }
     </style>
   </head>
@@ -33,6 +38,31 @@
           condition.<br />
           4. filter function select all element that meets a condition and
           return with array.
+        </p>
+      </section>
+      <section>
+        <h2>Difference cookies, local storage and session storage</h2>
+        <p class="line">
+          Cookies, Session Storage, and Local Storage are all ways to store data
+          in a user's browser, but they have different characteristics and use
+          cases: <br />
+
+          1. <span class="span">Cookies</span>: Cookies are small text files
+          that are stored on the client-side by the browser. They are commonly
+          used to store user preferences, session IDs, and other small amounts
+          of data.<br />
+          2. <span class="span">Session Storage</span>: Session Storage is a
+          mechanism for storing key-value pairs in the browser, similar to local
+          storage. However, Session Storage is only available for the duration
+          of a user's session on a website. Once the user closes the browser,
+          the data stored in Session Storage is deleted.<br />
+          3. <span class="span">Local Storage</span>: Local Storage is another
+          mechanism for storing key-value pairs in the browser, Some like that
+          Session Storage, but Local Storage persists even after the user closes
+          the browser. Local Storage is often used to store user preferences,
+          caching data, or other data that needs to be accessed across multiple
+          sessions. However, Local Storage has a maximum size limit that varies
+          depending on the browser.
         </p>
       </section>
     </main>
